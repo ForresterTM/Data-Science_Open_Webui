@@ -23,7 +23,7 @@ ARG UID=0
 ARG GID=0
 
 ######## WebUI frontend ########
-FROM --platform=$BUILDPLATFORM 034850332357.dkr.ecr.us-east-1.amazonaws.com/forrester-container-repo:node.20 AS build
+FROM --platform=$BUILDPLATFORM 034850332357.dkr.ecr.us-east-1.amazonaws.com/forrester-container-repo:node.22-alpine3.20 AS build
 ARG BUILD_HASH
 
 # Set Node.js options (heap limit Allocation failed - JavaScript heap out of memory)
