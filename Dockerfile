@@ -42,7 +42,7 @@ ENV APP_BUILD_HASH=${BUILD_HASH}
 RUN npm run build
 
 ######## WebUI backend ########
-FROM python:3.11-slim-bookworm AS base
+FROM 034850332357.dkr.ecr.us-east-1.amazonaws.com/forrester-container-repo:python.3.11-slim-bookworm AS base
 
 # Use args
 ARG USE_CUDA
